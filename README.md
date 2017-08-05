@@ -32,5 +32,5 @@ Visit the [project website][1] to learn about the available support options.
 
 [1]: https://github.com/OMOSde/contao-om-fastaccess
 [2]: http://www.gnu.org/licenses/lgpl-3.0.de.html
-[3]: https://github.com/OMOSde/contao-om-fastaccess/handbook/de.md
-[3]: https://github.com/OMOSde/contao-om-fastaccess/handbook/en.md
+[3]: https://github.com/OMOSde/contao-om-fastaccess/blob/master/handbook/de.md
+[4]: https://github.com/OMOSde/contao-om-fastaccess/blob/master/handbook/en.md
