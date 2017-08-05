@@ -1,0 +1,1 @@
+I do my best, but a handbook in english is not possible for me. Feel free to translate the german version to english. :-)
