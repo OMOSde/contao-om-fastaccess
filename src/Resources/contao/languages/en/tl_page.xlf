@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="en">
+        <body>
+            <trans-unit id="tl_page.addFastAccess.0">
+                <source>Redirect to the same page is not allowed.</source>
+                <target>Redirect to the same page is not allowed.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.addFastAccess.1">
+                <source>Selection of an protected page is not allowed.</source>
+                <target>Selection of an protected page is not allowed.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessToken.0">
+                <source>Token</source>
+                <target>Token</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessToken.1">
+                <source>Enter a token or have one generated.</source>
+                <target>Enter a token or have one generated.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessURL.0">
+                <source>URL</source>
+                <target>URL</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessURL.1">
+                <source>The URL to get to the protected page. The field is read-only.</source>
+                <target>The URL to get to the protected page. The field is read-only.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessJumpTo.0">
+                <source>Redirect page</source>
+                <target>Redirect page</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccessJumpTo.1">
+                <source>Forwarding page when using an incorrect token</source>
+                <target>Forwarding page when using an incorrect token</target>
+            </trans-unit>
+            <trans-unit id="tl_page.fastAccess_legend">
+                <source>Protection settings (contao-om-fastaccess)</source>
+                <target>Protection settings (contao-om-fastaccess)</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="ERR.redirectToSamePage">
+                <source>Redirect to the same page is not allowed.</source>
+                <target>Weiterleitung auf die gleiche Seite ist nicht erlaubt.</target>
+            </trans-unit>
+            <trans-unit id="ERR.selectedPageHasProtection">
+                <source>Selection of an protected page is not allowed.</source>
+                <target>Auswahl einer geschützten Seite ist nicht erlaubt.</target>
+            </trans-unit>
+            <trans-unit id="BTN.wizardRefresh">
+                <source>Generate token</source>
+                <target>Token generieren</target>
+            </trans-unit>
+            <trans-unit id="BTN.wizardCopy">
+                <source>Copy page URL with token</source>
+                <target>URL der Seite in die Zwischenablage kopieren</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

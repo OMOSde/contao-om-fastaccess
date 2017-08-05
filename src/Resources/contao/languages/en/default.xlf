@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="en">
+        <body>
+            <trans-unit id="ERR.redirectToSamePage">
+                <source>Redirect to the same page is not allowed.</source>
+                <target>Redirect to the same page is not allowed.</target>
+            </trans-unit>
+            <trans-unit id="ERR.selectedPageHasProtection">
+                <source>Selection of an protected page is not allowed.</source>
+                <target>Selection of an protected page is not allowed.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

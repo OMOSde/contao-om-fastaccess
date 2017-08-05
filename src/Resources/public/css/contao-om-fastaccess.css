@@ -1,0 +1,35 @@
+/**
+ * Contao bundle contao-om-fastaccess
+ *
+ * @copyright OMOS.de 2017 <http://www.omos.de>
+ * @author    René Fehrmann <rene.fehrmann@omos.de>
+ * @link      http://www.omos.de
+ * @license   LGPL 3.0+
+ */
+
+
+/***** wizard buttons *****/
+
+.wizard-fastaccess input.tl_text {
+    float: left;
+    width: calc(100% - 68px);
+}
+.wizard-fastaccess .button {
+    box-sizing: border-box;
+    float: left;
+    margin: 2px 0 0 4px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #0f1c26;
+    background: #0f1c26;
+}
+.wizard-fastaccess .button svg {
+    color: white;
+}
+.wizard-fastaccess .button:hover svg {
+    color: #f47c00;
+}
+.wizard-fastaccess .tl_help {
+    clear: both;
+}
