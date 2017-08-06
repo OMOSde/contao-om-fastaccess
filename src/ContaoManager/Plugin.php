@@ -41,9 +41,9 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(OMOSdeContaoOmFastaccessBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class])
-                ->setReplace(['om_fastaccess']),
+            BundleConfig::create('OMOSde\ContaoOmFastaccessBundle\OMOSdeContaoOmFastaccessBundle')
+                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
+                ->setReplace(['om-fastaccess']),
         ];
     }
 }
