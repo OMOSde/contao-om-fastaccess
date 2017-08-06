@@ -43,6 +43,8 @@ Hier wird eine Seite angegeben, auf die direkt weitergeleitet wird, falls der ve
 * als Weiterleitungsseite darf keine Seite ausgewählt werden, welche ebenfalls mittels diesem Bundle geschützt ist
 * als Weiterleitungsseite darf ebenso die bearbeitete Seite nicht gewählt werden
 
+* Das Bundle ist nicht für ein Update der bisherigen Contao-Erweiterung "om-fastaccess" vorgesehen. Es mag gehen, getestet ist es aber nicht.
+
 
 ## Plugins
 
