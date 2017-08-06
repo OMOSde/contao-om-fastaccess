@@ -1,11 +1,10 @@
 <?php
 
 /**
- * Contao module om_fastaccess
+ * Contao bundle contao-om-fastaccess
  *
  * @copyright OMOS.de 2017 <http://www.omos.de>
  * @author    René Fehrmann <rene.fehrmann@omos.de>
- * @package   om_fastaccess
  * @link      http://www.omos.de
  * @license   LGPL 3.0+
  */
