@@ -9,6 +9,8 @@
  * @license   LGPL 3.0+
  */
 
+use Contao\System;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Palettes
@@ -58,7 +60,12 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['fastAccessJumpTo'] = array
 /**
  * Javascript
  */
-$GLOBALS['TL_JAVASCRIPT'][] = 'bundles/omosdecontaoomfastaccess/js/Ajax.js';
+if (
+    System::getContainer()->get('contao.routing.scope_matcher')
+    ->isBackendRequest(System::getContainer()->get('request_stack')->getCurrentRequest() ?? Request::create(''))
+) {
+    $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/omosdecontaoomfastaccess/js/Ajax.js';
+}
 
 
 /**
