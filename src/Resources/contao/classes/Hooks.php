@@ -13,8 +13,11 @@
 /**
  * Namespace
  */
+
 namespace OMOSde\ContaoOmFastaccessBundle;
 
+
+use Contao\CoreBundle\Exception\AccessDeniedException;
 
 /**
  * Class Hooks
@@ -31,13 +34,18 @@ class Hooks extends \Backend
      * @param LayoutModel $objLayout
      * @param PageRegular $objPageRegular
      */
-    public function handleToken(\PageModel $objPage, \LayoutModel  $objLayout, \PageRegular $objPageRegular)
+    public function handleToken(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
     {
         if (
             $objPage->addFastAccess
             && '' !== $objPage->fastAccessToken
             && $objPage->fastAccessToken !== \Input::get('token')
         ) {
+            // Send 403
+            if (!$objPage->fastAccessJumpTo) {
+                throw new AccessDeniedException($GLOBALS['TL_LANG']['ERR']['redirectPageMissing']);
+            }
+
             // get page model from redirect page
             $page = \PageModel::findByPk($objPage->fastAccessJumpTo);
 

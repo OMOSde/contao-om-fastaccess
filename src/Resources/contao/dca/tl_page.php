@@ -51,7 +51,7 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['fastAccessJumpTo'] = array
     'inputType'     => 'pageTree',
     'foreignKey'    => 'tl_page.title',
     'save_callback' => array(array('tl_page_fastaccess', 'saveCallbackJumpTo')),
-    'eval'          => array('mandatory'=>true, 'fieldType'=>'radio', 'tl_class'=>'clr'),
+    'eval'          => array('fieldType'=>'radio', 'tl_class'=>'clr'),
     'sql'           => "int(10) unsigned NOT NULL default '0'",
     'relation'      => array('type'=>'hasOne', 'load'=>'eager')
 );

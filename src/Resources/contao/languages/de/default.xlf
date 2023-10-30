@@ -6,6 +6,10 @@
                 <source>Redirect to the same page is not allowed.</source>
                 <target>Weiterleitung auf die gleiche Seite ist nicht erlaubt.</target>
             </trans-unit>
+            <trans-unit id="ERR.redirectPageMissing">
+                <source>Redirect page is missing.</source>
+                <target>Weiterleitungsseite ist nicht ausgewählt.</target>
+            </trans-unit>
             <trans-unit id="ERR.selectedPageHasProtection">
                 <source>Selection of an protected page is not allowed.</source>
                 <target>Auswahl einer geschützten Seite ist nicht erlaubt.</target>
