@@ -33,14 +33,16 @@ class Hooks extends \Backend
      */
     public function handleToken(\PageModel $objPage, \LayoutModel  $objLayout, \PageRegular $objPageRegular)
     {
-        if ($objPage->addFastAccess && $objPage->fastAccessToken <> \Input::get('token'))
-        {
+        if (
+            $objPage->addFastAccess
+            && '' !== $objPage->fastAccessToken
+            && $objPage->fastAccessToken !== \Input::get('token')
+        ) {
             // get page model from redirect page
             $page = \PageModel::findByPk($objPage->fastAccessJumpTo);
 
             // prevent redirect to same site
-            if ($page->id !== $objPage->id)
-            {
+            if (null === $page || $page->id !== $objPage->id) {
                 $this->redirect($page->getFrontendUrl());
             }
         }
