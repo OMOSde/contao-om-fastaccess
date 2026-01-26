@@ -1,0 +1,7 @@
+ERR:
+  redirectToSamePage: Weiterleitung auf die gleiche Seite ist nicht erlaubt.
+  selectedPageHasProtection: Auswahl einer geschützten Seite ist nicht erlaubt.
+
+BTN:
+  wizardRefresh: Token generieren
+  wizardCopy: URL der Seite in die Zwischenablage kopieren

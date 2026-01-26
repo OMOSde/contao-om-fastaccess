@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  # DataContainers
+  OMOSde\ContaoOmFastaccessBundle\DataContainer\:
+    resource: '../src/DataContainer/**/*'
+    public: true
+
+  # Hooks
+  OMOSde\ContaoOmFastaccessBundle\EventListener\Hooks\GeneratePageListener:
+
+  # Routes
+  OMOSde\ContaoOmFastaccessBundle\Controller\Route\:
+    resource: '../src/Controller/Route/**/*'
+    public: true

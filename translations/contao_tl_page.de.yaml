@@ -1,0 +1,17 @@
+tl_page:
+  # Legends
+  fastaccess_legend: Schutz-Einstellungen (contao-om-fastaccess)
+
+    # Fields
+  addFastaccess:
+    0: Seite mit Sicherheitstoken schützen
+    1: Diese Seite mit einem Sicherheitstoken schützen
+  fastaccessToken:
+    0: Token
+    1: Geben Sie eine Token ein oder lassen Sie eines generieren.
+  fastaccessURL:
+    0: URL
+    1: Die URL, mit der Sie auf die geschützte Seite gelangen. Das Feld ist schreibgeschützt.
+  fastaccessJumpTo:
+    0: Weiterleitungsseite
+    1: Weiterleitungsseite bei Verwendung eines falschen Tokens

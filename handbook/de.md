@@ -7,7 +7,7 @@ Das vorliegende Bundle ist eine Erweiterung für das Open-Source-Content-Managem
 
 ## Systemvoraussetzungen
 
-* Contao 4.4+
+* Contao 5.3+
 
 
 ## Installation
@@ -40,10 +40,8 @@ Hier wird eine Seite angegeben, auf die direkt weitergeleitet wird, falls der ve
 
 ## Hinweise:
 
-* als Weiterleitungsseite darf keine Seite ausgewählt werden, welche ebenfalls mittels diesem Bundle geschützt ist
+* als Weiterleitungsseite darf keine Seite ausgewählt werden, welche ebenfalls mittels dieses Bundles geschützt ist
 * als Weiterleitungsseite darf ebenso die bearbeitete Seite nicht gewählt werden
-
-* Das Bundle ist nicht für ein Update der bisherigen Contao-Erweiterung "om-fastaccess" vorgesehen. Es mag gehen, getestet ist es aber nicht.
 
 
 ## Plugins

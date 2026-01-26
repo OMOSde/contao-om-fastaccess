@@ -1,12 +1,11 @@
 /**
  * Contao bundle contao-om-fastaccess
  *
- * @copyright OMOS.de 2017 <http://www.omos.de>
+ * @copyright OMOS.de 2025 <http://www.omos.de>
  * @author    René Fehrmann <rene.fehrmann@omos.de>
  * @link      http://www.omos.de
  * @license   LGPL 3.0+
  */
-
 
 /***** wizard buttons *****/
 
@@ -26,6 +25,7 @@
 }
 .wizard-fastaccess .button svg {
     color: white;
+  transition: color 250ms ease;
 }
 .wizard-fastaccess .button:hover svg {
     color: #f47c00;

@@ -1,0 +1,7 @@
+ERR:
+  redirectToSamePage: Redirecting to the same page is not allowed.
+  selectedPageHasProtection: Selecting a protected page is not allowed.
+
+BTN:
+  wizardRefresh: Generate token
+  wizardCopy: Copy URL of the page to the clipboard

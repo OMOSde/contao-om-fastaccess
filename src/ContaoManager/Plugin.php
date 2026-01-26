@@ -3,46 +3,37 @@
 /**
  * Contao bundle contao-om-fastaccess
  *
- * @copyright OMOS.de 2017 <http://www.omos.de>
+ * @copyright OMOS.de 2025 <http://www.omos.de>
  * @author    René Fehrmann <rene.fehrmann@omos.de>
  * @link      http://www.omos.de
  * @license   LGPL 3.0+
  */
 
-
-/**
- * Namespace
- */
 namespace OMOSde\ContaoOmFastaccessBundle\ContaoManager;
 
-
-/**
- * Usages
- */
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use OMOSde\OmFastaccessBundleOMOSdeOmFastaccessBundle;
+use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
+use OMOSde\ContaoOmFastaccessBundle\OMOSdeContaoOmFastaccessBundle;
+use Symfony\Component\Config\Loader\LoaderResolverInterface;
+use Symfony\Component\HttpKernel\KernelInterface;
 
-
-/**
- * Plugin for the Contao Manager.
- *
- * @copyright OMOS.de 2017 <http://www.omos.de>
- * @author    René Fehrmann <rene.fehrmann@omos.de>
- */
-class Plugin implements BundlePluginInterface
+class Plugin implements BundlePluginInterface, RoutingPluginInterface
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create('OMOSde\ContaoOmFastaccessBundle\OMOSdeContaoOmFastaccessBundle')
-                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
-                ->setReplace(['om-fastaccess']),
+            BundleConfig::create(OMOSdeContaoOmFastaccessBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
+    }
+
+    public function getRouteCollection(LoaderResolverInterface $resolver, KernelInterface $kernel)
+    {
+        return $resolver
+            ->resolve(__DIR__ . '/../../config/routes.yaml')
+            ->load(__DIR__ . '/../../config/routes.yaml');
     }
 }
