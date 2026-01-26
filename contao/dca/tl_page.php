@@ -15,24 +15,24 @@ use Contao\System;
 use Symfony\Component\HttpFoundation\Request;
 
 // Palettes
-$GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'][] = 'addFastaccess';
-$GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] .= ';{fastaccess_legend},addFastaccess';
+$GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'][] = 'addFastAccess';
+$GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] .= ';{fastaccess_legend},addFastAccess';
 
 // Subpalettes
-$GLOBALS['TL_DCA']['tl_page']['subpalettes']['addFastaccess'] = 'fastaccessToken,fastaccessJumpTo';
+$GLOBALS['TL_DCA']['tl_page']['subpalettes']['addFastAccess'] = 'fastAccessToken,fastAccessJumpTo';
 
 // Fields
-$GLOBALS['TL_DCA']['tl_page']['fields']['addFastaccess'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['addFastAccess'] = [
     'inputType' => 'checkbox',
     'eval' => ['submitOnChange' => true],
     'sql' => "char(1) NOT NULL default ''"
 ];
-$GLOBALS['TL_DCA']['tl_page']['fields']['fastaccessToken'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['fastAccessToken'] = [
     'inputType' => 'text',
     'eval' => ['maxlength' => 255, 'tl_class' => 'w50 wizard-fastaccess'],
     'sql' => "varchar(100) NOT NULL default ''"
 ];
-$GLOBALS['TL_DCA']['tl_page']['fields']['fastaccessJumpTo'] = [
+$GLOBALS['TL_DCA']['tl_page']['fields']['fastAccessJumpTo'] = [
     'exclude' => true,
     'inputType' => 'pageTree',
     'foreignKey' => 'tl_page.title',
