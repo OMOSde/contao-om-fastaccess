@@ -23,7 +23,7 @@ let ContaoOmFastaccess =
           let arrUrl = document.getElementById("buttonCopy").getAttribute('data-clipboard-text').split("?");
           let response = JSON.parse(http.responseText);
 
-          document.getElementById("ctrl_fastaccessToken").value = response.token;
+          document.getElementById("ctrl_fastAccessToken").value = response.token;
           document.getElementById("buttonCopy").setAttribute('data-clipboard-text', arrUrl[0] + "?token=" + response.token);
         }
       }
@@ -36,7 +36,7 @@ let ContaoOmFastaccess =
 
     handleClipboard() {
       document.addEventListener("DOMContentLoaded", function (e) {
-        let inputToken = document.getElementById("ctrl_fastaccessToken");
+        let inputToken = document.getElementById("ctrl_fastAccessToken");
         let buttonCopy = document.getElementById("buttonCopy");
         if (inputToken) {
           inputToken.addEventListener('keyup', function () {

@@ -29,7 +29,7 @@ class PageDataContainer
         $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/omosdecontaoomfastaccess/js/clipboard/clipboard.min.js|static';
     }
 
-    #[AsCallback(table: 'tl_page', target: 'fields.fastaccessToken.load')]
+    #[AsCallback(table: 'tl_page', target: 'fields.fastAccessToken.load')]
     public function fieldsFastaccessTokenLoad($value): mixed
     {
         if (!$value) {
@@ -39,13 +39,13 @@ class PageDataContainer
         return $value;
     }
 
-    #[AsCallback(table: 'tl_page', target: 'fields.fastaccessToken.save')]
+    #[AsCallback(table: 'tl_page', target: 'fields.fastAccessToken.save')]
     public function fieldsFastaccessTokenSave($value): mixed
     {
         return $value;
     }
 
-    #[AsCallback(table: 'tl_page', target: 'fields.fastaccessToken.wizard')]
+    #[AsCallback(table: 'tl_page', target: 'fields.fastAccessToken.wizard')]
     public function fieldsFastaccessTokenWizard(DataContainer $dataContainer): string
     {
         $router = System::getContainer()->get('contao.routing.content_url_generator');
@@ -62,7 +62,7 @@ class PageDataContainer
         return $htmlRefresh . $htmlCopy;
     }
 
-    #[AsCallback(table: 'tl_page', target: 'fields.fastaccessJumpTo.save')]
+    #[AsCallback(table: 'tl_page', target: 'fields.fastAccessJumpTo.save')]
     public function fieldsFastaccessJumpToSave($value, DataContainer $dataContainer): mixed
     {
         if (!$value) {

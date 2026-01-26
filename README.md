@@ -1,10 +1,12 @@
 # Contao-OM-FastAccess
 
-A symfony bundle for the Open Source PHP Content Management System Contao. It allows token based protection to single content pages.
+A symfony bundle for the Open Source PHP Content Management System Contao. It allows token based protection to single
+content pages.
 
 ## System requirements
 
- * Contao 4.4+
+* Version 2: Contao 5.3+ 
+* Version 1: Contao 4.4+
 
 ## Installation
 
@@ -24,7 +26,8 @@ composer require omosde/contao-om-fastaccess
 
 Contao-OM-Fastaccess is licensed under the terms of the LGPLv3. The full license text is available at [`gnu.org`][2].
 
-Note that the LGPL incorporates the terms and conditions of the GPL, therefore both licenses are included there. This, however, does not imply that this bundle is dual licensed under both the GPL and the LGPL.
+Note that the LGPL incorporates the terms and conditions of the GPL, therefore both licenses are included there. This,
+however, does not imply that this bundle is dual licensed under both the GPL and the LGPL.
 
 ## Getting support
 
